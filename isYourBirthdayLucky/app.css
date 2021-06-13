@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+h1 {
+    margin-top: 10vh;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+}
+
+#container {
+    width: 50%;
+    margin: auto;
+
+}
+
+#section {
+
+    width: 500px;
+    margin: auto;
+}
+
+.DOB {
+    height: 30px;
+    width: 500px;
+    border: 1.2px solid blue;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: large;
+    padding: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.textarea_label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+#check {
+    display: block;
+    height: 30px;
+    width: 500px;
+    font-weight: bold;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(214, 183, 46);
+    border: 3px solid rgb(214, 183, 46);
+
+}
+
+#privacy_alert {
+    margin-top: 20px;
+}
+
+#footer_id {
+    width: 500px;
+    margin: auto;
+    /* background-color: pink; */
+    text-align: center;
+}
+
+footer {
+    display: block;
+    width: 98%;
+    margin-left: 13px;
+    margin-right: 10px;
+    margin-bottom: 13px;
+    height: 130px;
+    border-radius: 15px;
+    background-color: rgb(133, 52, 58);
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+img {
+    width: 70px;
+    height: 70px;
+    margin-left: 90px;
+
+}
+
+#github_icon {
+modal_container_false    margin-left: 10px;
+}
+
+#footer_icon_div {
+    margin-top: 20px;
+
+}
+
+#modal_container_true {
+    display: none;
+    position: fixed;
+    margin-top: -438px;
+    height: 100vh;
+    width: 1370px;
+    background-color: rgba(14, 13, 13, 0.61);
+    backdrop-filter: blur(5px);
+}
+
+
+.modal {
+
+    width: 80%;
+    margin: auto;
+    margin-top: 35px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 100%;
+}
+
+#modal_container_false{
+    display: none;
+    position: fixed;
+    margin-top: -438px;
+    height: 100vh;
+    width: 1370px;
+    background-color: rgba(14, 13, 13, 0.61);
+    backdrop-filter: blur(5px);
+}
+
+
+
+.modal_imge {
+    width: 80%;
+    margin: auto;
+    height: 10%;
+    padding: 50px;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+
+
+
+.modal_hdn {
+    margin-top: 55px;
+
+}
+
+.modal_close_btn {
+    width: 20%;
+    height: 50px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: rgb(214, 183, 46);
+    border: none;
+}
+
+#modal_img {
+    width: 50%;
+    height: 300px;
+    padding-top: 30px;
+    margin-left: -10px;
+
+}
+
+#false_modal {
+    margin-top: 65px;
+    
+}

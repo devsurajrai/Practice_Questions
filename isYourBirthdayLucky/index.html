@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css" type="text/css">
+    <title>Is Your Birthday Lucky !</title>
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <h1>Is Your Birthday Lucky?</h1>
+
+        <div id="section">
+            <label class="textarea_label">Please enter your DOB:</label>
+            <input type="text" id="dateOfBirth" class="DOB" placeholder="Ex: 11121997">
+
+            <label class="textarea_label">Please enter your lucky number:</label>
+            <input type="text" id="userLuckyNumber" class="DOB">
+
+            <button id="check">Check</button>
+
+            <h5 id="privacy_alert">Privacy Alert: This app is not storing any data.</h5>
+        </div>
+    </div>
+
+    <footer id="footer">
+        <div id="footer_id">
+
+            <h2 id="footer_heading" style="font-size: 18px; padding-top: 15px;">Connect with me on <span
+            style="background-color: rgb(214, 183, 46); color:black">Social Media</span></h2>
+
+            <div id="footer_icon_div">
+
+                <a href="https://github.com/devsurajrai"><img id="github_icon" src="icons/github.svg"
+                        alt="github link"></a>
+                <a href="http://twitter.com/surajrai_z"><img src="icons/twitter.svg" alt="twitter link"></a>
+                <a href="https://www.linkedin.com/in/sr3688/"><img class="social_icons" src="icons/linkedin.svg"
+                        alt="github link"></a>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!--Modal-->
+
+    <div id="modal_container_true">
+        <div class="modal">
+
+            <img class="modal_imge" src="image/congratulation.jpeg" alt="">
+            <h1 class="modal_hdn">Your Birthday is Lucky !</h1>
+            <button class="modal_close_btn" >Close</button>
+
+        </div>
+        
+    </div>
+                                    
+    
+    <div id="modal_container_false">
+
+                <div  id="false_modal" class="modal">
+
+                    <img id="modal_img" class="modal_imge" src="image/sorry.jpeg" alt="">
+                    <h1 class="modal_hdn">Your Birthday is Not Lucky !</h1>
+                    <button class="modal_close_btn">Close</button>
+
+                </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
