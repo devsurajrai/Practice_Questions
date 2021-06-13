@@ -149,7 +149,8 @@ modal_container_false    margin-left: 10px;
 
 
 .modal_hdn {
-    margin-top: 55px;
+    margin-top: 20px;
+    margin-bottom: 25px;
 
 }
 
@@ -164,7 +165,7 @@ modal_container_false    margin-left: 10px;
 
 #modal_img {
     width: 50%;
-    height: 300px;
+    height: 360px;
     padding-top: 30px;
     margin-left: -10px;
 
