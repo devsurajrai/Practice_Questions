@@ -1,4 +1,4 @@
-#Is yoour birthday lucky?
+# Is yoour birthday lucky?
 
 This program has two varients one is a CLI app that you can find in the CLI folder and the other one is the web app made with the HTML CSS and VannilaJS. This app takes two inputs which are explained below:
 
@@ -8,7 +8,7 @@ User has to put in the his/her birthday in the format DDMMYYYY for ex: 11121997 
 
 ### ii) User Lucky Number
 
-User has sto put in the lucky number here.
+User has to put in the lucky number here.
 
 ## How the program works(Logic)?
    
