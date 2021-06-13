@@ -1,3 +1,4 @@
+
 var readlineSync = require('readline-sync');
 
 var billAmount = "";
@@ -18,8 +19,16 @@ while(parseInt(cashGiven)<parseInt(billAmount)){
 console.log()
 
 var notes = [1, 5, 10, 20, 100, 500, 2000];
+
+if(billAmount==cashGiven){
+  console.log("Nothing to be returned !")
+}
+else{
 console.log("Kindly return " + (parseInt(cashGiven)- parseInt(billAmount)) + " to the customer as mentioned below:")
 console.log(" ")
+
+}
+
 
 changeCalulate(parseInt(billAmount),parseInt(cashGiven));
 
@@ -38,4 +47,3 @@ function changeCalulate(bill, cash)
      if(noOfNotes) console.log(notes[i] + " : " + noOfNotes);   
     }
 }
-
