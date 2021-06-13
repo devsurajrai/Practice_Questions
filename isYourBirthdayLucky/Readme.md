@@ -1,4 +1,4 @@
-# Is yoour birthday lucky?
+# Is your birthday lucky?
 
 This program has two varients one is a CLI app that you can find in the CLI folder and the other one is the web app made with the HTML CSS and VannilaJS. This app takes two inputs which are explained below:
 
