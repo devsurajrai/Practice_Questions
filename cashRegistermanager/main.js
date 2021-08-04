@@ -96,7 +96,11 @@ let enterEventHandler=()=>{
   }
   
   else{
-      if(parseInt(receivedAmount.value)>parseInt(billAmount.value)){
+       if(parseInt(receivedAmount.value)===parseInt(billAmount.value)){
+        receivedAmountError.innerHTML="Nothing To Be Returned ! Please Thank The Customer"
+        receivedAmountError.style.fontSize="20px"
+       }
+      else if(parseInt(receivedAmount.value)>parseInt(billAmount.value)){
           returnAmount.classList.add("display-block")
           receivedAmountError.innerHTML=''
         //  enterBtn.classList.add('display-none')
