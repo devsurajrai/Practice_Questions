@@ -18,19 +18,19 @@ Well, it takes two inputs as mentioned above and checks if the sum of the DOB is
     
 ## Result 
 
-As a result if the DOB is divisible by the lucky number then the program shows the output "Congratulations ! Your Birthday is Lucky" else shows "Sorry ! Your birthday is npt lucky"
+As a result if the DOB is divisible by the lucky number then the program shows the output "Congratulations ! Your Birthday is Lucky" else shows "Sorry ! Your birthday is not lucky"
 
 ## Testing
 
-      For testing you can put the values mentioned below:
+       For testing you can put the values mentioned below:
 
        For Being the user Lucky:
 
-       DOB: 11121997
+       DOB: 11/12/1997
        Lucky Number: 31
 
        For Being the user unlucky:
 
-       DOB: 11121997
+       DOB: 11/12/1997
        Lucky Number: 30
-    
+

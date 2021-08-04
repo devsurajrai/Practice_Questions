@@ -2,25 +2,30 @@ var birthDay = document.querySelector('#dateOfBirth');
 var userLuckyNumber = document.querySelector('#userLuckyNumber');
 var button = document.querySelector('#check')
 var closeButton = document.querySelectorAll('.modal_close_btn')
-console.log(closeButton);
 
 button.addEventListener('click', clickHandler = () => {
+    
+    birthDayArr=[...birthDay.value]
+    console.log(birthDayArr)
+    birthDayValue=""
+    for(let items in birthDayArr){
+        if(birthDayArr[items]!=="-"){
+            birthDayValue+=birthDayArr[items]
+        }
+    }
+    
     var birthdaySum = 0;
     var lastDigit = 0;
-    var birthdayValue = birthDay.value;
+    birthDayValue=parseInt(birthDayValue)
     var luckyNumberValue = userLuckyNumber.value;
-    while (birthdayValue) {
-        lastDigit = birthdayValue % 10;
+    while (birthDayValue) {
+        lastDigit = birthDayValue % 10;
         birthdaySum += lastDigit;
-        birthdayValue = Math.floor(birthdayValue / 10);
+        birthDayValue = Math.floor(birthDayValue / 10);
     }
 
     if (birthdaySum % luckyNumberValue == 0) {
         document.querySelector('#modal_container_true').style.display = 'block'
-        console.log(1);
-        
-        console.log(2);
-
     } 
     
     else {
