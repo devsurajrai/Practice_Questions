@@ -4,8 +4,8 @@ let returnAmount=document.querySelector(".cash-reg__output")
 let customerAmount=document.querySelector(".cash-reg__input-customer")
 let receivedAmount=document.querySelector("#received-amount")
 let billAmount=document.querySelector("#bill-amount")
-let billAmountError=document.querySelector("#cash-reg__input--bill-error")
-let receivedAmountError=document.querySelector("#cash-reg__input--customer-error")
+let billAmountError=document.querySelector(".cash-reg__input--bill-error")
+let receivedAmountError=document.querySelector(".cash-reg__input--customer-error")
 let twoThousand=document.querySelector('#two-thousand')
 let fiveHundred=document.querySelector('#five-hundred')
 let hundred=document.querySelector('#hundred')
@@ -15,69 +15,25 @@ let five=document.querySelector('#five')
 let one=document.querySelector('#one')
 let balAmount=document.querySelector('#total-amount')
 
-
+notesArr=[2000,500,100,20,10,5,1]
+notesSelectorsArr=[twoThousand,fiveHundred,hundred,twenty,ten,five,one]
 
 function changeCalculation(){
-  let count=0
-  let bal=receivedAmount.value-billAmount.value;
-  balAmount.innerHTML=bal
-
-  if(bal>=2000){
-    while(bal>=2000){
-      bal-=2000;
-      count++
+  
+  bal=parseInt(receivedAmount.value)-parseInt(billAmount.value)
+  let totalBal=bal
+  balAmount.innerHTML=totalBal
+  
+  for(i=0;i<notesArr.length;i++){
+    let noOfNotes=0
+    if(bal>=notesArr[i]){
+      while(bal>=notesArr[i]){
+        bal-=notesArr[i]
+        noOfNotes++
+      }
+      console.log(noOfNotes)
+      notesSelectorsArr[i].innerHTML=noOfNotes
     }
-    twoThousand.innerHTML=count
-    count=0
-  }
-  if(bal>=500){
-    while(bal>=500){
-      bal-=500;
-      count++
-    }
-    fiveHundred.innerHTML=count
-    count=0
-  }
-  if(bal>=100){
-    while(bal>=100){
-      bal-=100;
-      count++
-    }
-    hundred.innerHTML=count
-    count=0
-  }
-
-  if(bal>=20){
-    while(bal>=20){
-      bal-=20;
-      count++
-    }
-    twenty.innerHTML=count
-    count=0
-  }
-  if(bal>=10){
-    while(bal>=10){
-      bal-=10;
-      count++
-    }
-    ten.innerHTML=count
-    count=0
-  }
-  if(bal>=5){
-    while(bal>=5){
-      bal-=5;
-      count++
-    }
-    five.innerHTML=count
-    count=0
-  }
-  if(bal>=1){
-    while(bal>=1){
-      bal-=1;
-      count++
-    }
-    one.innerHTML=count
-    count=0
   }
 }
 
@@ -96,14 +52,15 @@ let enterEventHandler=()=>{
   }
   
   else{
-       if(parseInt(receivedAmount.value)===parseInt(billAmount.value)){
+      if(parseInt(receivedAmount.value)===parseInt(billAmount.value)){
         receivedAmountError.innerHTML="Nothing To Be Returned ! Please Thank The Customer"
         receivedAmountError.style.fontSize="20px"
-       }
+        receivedAmountError.style.color="white"
+      }
+
       else if(parseInt(receivedAmount.value)>parseInt(billAmount.value)){
           returnAmount.classList.add("display-block")
           receivedAmountError.innerHTML=''
-        //  enterBtn.classList.add('display-none')
           resetBtn.classList.add('display-inline')
           changeCalculation()
       }
